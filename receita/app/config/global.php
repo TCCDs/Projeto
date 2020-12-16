@@ -1,7 +1,7 @@
 <?php
 
-define('BASE', '/public_html/receitas/receita/');
-define('UNSET_COUNT', 3);
+define('BASE', '/bigcaravelas.com.br/public_html/receitas/receita/');
+define('UNSET_COUNT', 4);
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
