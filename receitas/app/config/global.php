@@ -1,7 +1,7 @@
 <?php
 
-define('BASE', '/receitas/public/');
-define('UNSET_COUNT', 2);
+define('BASE', 'receitas/receitas/public/');
+define('UNSET_COUNT', 3);
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
