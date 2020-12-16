@@ -3,4 +3,4 @@ RewriteBase /
 
 RewriteCond %{THE_REQUEST} public/([^\s?]*) [NC]
 RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^((?!public/).*)$ https://receitas.bigcaravelas.com.br/public/$1 [L,NC]
+RewriteRule ^((?!public/).*)$ public_html/receitas/receita/public/$1 [L,NC]
