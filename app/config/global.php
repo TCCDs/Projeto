@@ -1,6 +1,6 @@
 <?php
 
-define('BASE', '/https://bigcaravelas.com.br/public_html/receitas/');
+define('BASE', '/public_html/receitas/');
 define('UNSET_COUNT', 2);
 
 define('DB_HOST', '151.106.96.51');
