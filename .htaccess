@@ -3,4 +3,4 @@ RewriteBase /
 
 RewriteCond %{THE_REQUEST} client/([^\s?]*) [NC]
 RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^((?!client/).*)$ https://receitas.bigcaravelas.com.br/receitas/client/$1 [L,NC]
+RewriteRule ^((?!client/).*)$ client/$1 [L,NC]
