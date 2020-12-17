@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ teste.php [NC,L]
+RewriteRule ^(.*)$ index.php [NC,L]
 
 #Options -Indexes
