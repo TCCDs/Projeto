@@ -1,6 +1,6 @@
 <?php
 
-define('BASE', '/public_html/');
+define('BASE', '/projetosDev/');
 define('UNSET_COUNT', 2);
 
 define('DB_HOST', '151.106.96.51');
