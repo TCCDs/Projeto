@@ -1,6 +1,10 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ teste.php [NC,L]
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ teste.php [NC,L]
 
-Options -Indexes
+#Options -Indexes
+
+RewriteEngine on
+RewriteCond $1 !^(teste\.php|style\.css|js\.js)
+RewriteRule ^(.*)$ /teste.php/$1 [L]
