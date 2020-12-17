@@ -9,4 +9,4 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^bigcaravelas\.com\.br$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www\.bigcaravelas\.com\.br$
 RewriteCond %{REQUEST_URI} !client/
-RewriteRule (.*) /public_html/receitas/client/$1 [L]
+RewriteRule (.*) /receitas/client/$1 [L]
