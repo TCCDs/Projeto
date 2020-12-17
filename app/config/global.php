@@ -1,6 +1,6 @@
 <?php
 
-define('BASE', '/my-receitas/');
+define('BASE', '/receitas/');
 define('UNSET_COUNT', 1);
 
 define('DB_HOST', 'localhost');
