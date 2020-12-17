@@ -3,10 +3,4 @@
 
 #RewriteCond %{THE_REQUEST} public/([^\s?]*) [NC]
 #RewriteRule ^ %1 [L,NE,R=302]
-#RewriteRule ^((?!public/).*)$ https://bigcaravelas.com.br/public_hdtml/receitas/public/$1 [L,NC]
-
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^receitas.bigcaravelas.com.br$ [NC,OR] RewriteCond %{HTTP_HOST} ^www.receitas.bigcaravelas.com.br$
-RewriteCond %{REQUEST_URI} !receitas/
-RewriteRule (.*) /receitas/$1 [L]
+#RewriteRule ^((?!public/).*)$ https://bigcaravelas.com.br/public_html/receitas/public/$1 [L,NC]
