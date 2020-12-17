@@ -1,6 +1,12 @@
-RewriteEngine On
-RewriteBase /
+#RewriteEngine On
+#RewriteBase /
 
-RewriteCond %{THE_REQUEST} client/([^\s?]*) [NC]
-RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^((?!client/).*)$ https://bigcaravelas.com.br/receitas/client/$1 [L,NC]
+#RewriteCond %{THE_REQUEST} client/([^\s?]*) [NC]
+#RewriteRule ^ %1 [L,NE,R=302]
+#RewriteRule ^((?!client/).*)$ https://bigcaravelas.com.br/receitas/client/$1 [L,NC]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^bigcaravelas\.com\.br$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.bigcaravelas\.com\.br$
+RewriteCond %{REQUEST_URI} !client/
+RewriteRule (.*) /receitas/client/$1 [L]
