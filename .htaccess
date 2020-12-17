@@ -1,6 +1,11 @@
-RewriteEngine On
-RewriteBase /
+#RewriteEngine On
+#RewriteBase /
 
-RewriteCond %{THE_REQUEST} client/([^\s?]*) [NC]
-RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^((?!client/).*)$ receitas/client/$1 [L,NC]
+#RewriteCond %{THE_REQUEST} client/([^\s?]*) [NC]
+#RewriteRule ^ %1 [L,NE,R=302]
+#RewriteRule ^((?!client/).*)$ receitas/client/$1 [L,NC]
+
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^client/(.*)$ https://www.bigcaravelas.com.br/receitas/client/$1 [R=301,L]
